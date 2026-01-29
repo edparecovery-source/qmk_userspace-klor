@@ -16,11 +16,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 
 #define _BASE        0
-#define _SNIPER      1
-#define _DRAG_SCROLL 2
+#define _DRAG_SCROLL 1
+#define _SNIPER      2
+
 
 #define DRAGSCR TT(_DRAG_SCROLL)
-#define SNIPER  TT(_SNIPER)
+#define SNIPER  TG(_SNIPER)
 
 #define NEXTTAB LCTL(KC_TAB)
 #define PREVTAB LCS(KC_TAB)
@@ -31,18 +32,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 //      ___x___, ___x___, ___x___, ___x___
 
-    [_BASE] = LAYOUT( 
-        MS_BTN4, ___x___, DRAGSCR, MS_BTN2,
-        MS_BTN1,                   SNIPER ),
+    [_BASE] = LAYOUT(
+        MS_BTN4, ___x___,  MS_BTN2, DRAGSCR,
+        MS_BTN1,                    SNIPER ),
+
+    [_DRAG_SCROLL] = LAYOUT(
+        MS_BTN5, DPI_CONFIG, ___x___, _______,
+        MS_BTN3,                      QK_BOOT ),
 
     [_SNIPER] = LAYOUT(
-        MS_BTN4, ___x___, ___x___, MS_BTN2,
-        MS_BTN1,                   _______ ),
-
-    [_DRAG_SCROLL] = LAYOUT( 
-        MS_BTN5, DPI_CONFIG, _______, ___x___,
-        MS_BTN3,                      QK_BOOT )
-
+        MS_BTN4, ___x___, MS_BTN2, DRAGSCR,
+        MS_BTN1,                   _______ )
 };
 
 
