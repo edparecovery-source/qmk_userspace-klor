@@ -31,25 +31,25 @@
 
 #define LAYOUT_t4corun_keymap(                                    \
     k00, k01, k02, k03, k04,   k05, k06, k07, k08, k09,           \
-    k10, k11, k12, k13, k14,   k15, k16, k17, k18, k19,           \
-    k20, k21, k22, k23, k24,   k25, k26, k27, k28, k29,           \
-              k32, k33, k34,   k35, k36,                          \
+k10,k11, k12, k13, k14, k15,   k16, k17, k18, k19, k20, k21       \
+k22, k23, k24, k25, k26, k27,  k28, k29, k30, k31, k32, k33       \
+          k34, k35, k36,k37,   k38, k39,k40,k41                   \
                         e01,   e02                                \
 )                                                                 \
 LAYOUT_klor_wrapper (                                             \
     k00, k01, k02, k03, k04,             k05, k06, k07, k08, k09, \
-    k10, k11, k12, k13, k14,             k15, k16, k17, k18, k19, \
-    k20, k21, k22, k23, k24, e01,   e02, k25, k26, k27, k28, k29, \
-              k32, k33, k34,             k35, k36, KC_NO          \
+k10,k11, k12, k13, k14, k15,             k16, k17, k18, k19, k20, k21   \
+k22, k23, k24, k25, k26, k27, e01,  e02, k28, k29, k30, k31, k32, k33   \
+           k34, k35, k36,k37,           k38, k39,k40,k41                \
 )
 
 #define KB(...) LAYOUT_t4corun_keymap(__VA_ARGS__)
 
 const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM = LAYOUT_klor_wrapper(
     'L', 'L', 'L', 'L', 'L',                'R', 'R', 'R', 'R', 'R', 
-    'L', 'L', 'L', 'L', 'L',                'R', 'R', 'R', 'R', 'R', 
-    'L', 'L', 'L', 'L', 'L', 'L',      'R', 'R', 'R', 'R', 'R', 'R', 
-              'L', 'L', 'L',                'R', 'R', 'R'
+'L','L', 'L', 'L', 'L', 'L',                'R', 'R', 'R', 'R', 'R', 'R',
+ 'L','L', 'L', 'L', 'L', 'L', 'L',     'R', 'R', 'R', 'R', 'R', 'R', 'R',
+           'L','L', 'L', 'L',               'R','R', 'R', 'R'
 );
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
