@@ -44,6 +44,7 @@
         },
         "driver": "ws2812",
         "layout": [
+            {"matrix": [3, 4], "x": 102, "y": 63, "flags": 1},
             {"matrix": [3, 3], "x": 89, "y": 54, "flags": 1},
             {"matrix": [3, 2], "x": 74, "y": 49, "flags": 1},
             {"matrix": [2, 5], "x": 75, "y": 34, "flags": 4},
@@ -62,6 +63,9 @@
             {"matrix": [2, 1], "x": 17, "y": 42, "flags": 4},
             {"matrix": [1, 1], "x": 15, "y": 30, "flags": 4},
             {"matrix": [0, 1], "x": 13, "y": 17, "flags": 4},
+            {"matrix": [1, 0], "x": 0, "y": 28, "flags": 1},
+            {"matrix": [2, 0], "x": 3, "y": 41, "flags": 1},
+            {"matrix": [7, 4], "x": 122, "y": 63, "flags": 1},
             {"matrix": [7, 3], "x": 135, "y": 54, "flags": 1},
             {"matrix": [7, 2], "x": 150, "y": 49, "flags": 1},
             {"matrix": [6, 5], "x": 149, "y": 34, "flags": 4},
@@ -79,11 +83,13 @@
             {"matrix": [6, 2], "x": 193, "y": 33, "flags": 4},
             {"matrix": [6, 1], "x": 206, "y": 42, "flags": 4},
             {"matrix": [5, 1], "x": 209, "y": 30, "flags": 4},
-            {"matrix": [4, 1], "x": 211, "y": 17, "flags": 4}
+            {"matrix": [4, 1], "x": 211, "y": 17, "flags": 4},
+            {"matrix": [5, 0], "x": 224, "y": 28, "flags": 1},
+            {"matrix": [6, 0], "x": 221, "y": 41, "flags": 1}
         ],
         "max_brightness": 150,
         "sleep": true,
-        "split_count": [18, 18],
+        "split_count": [21, 21],
         "timeout": 60000
     },
     "split": {
