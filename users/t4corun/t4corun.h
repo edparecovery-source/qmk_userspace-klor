@@ -181,8 +181,8 @@ enum keycodes {
 #define     _SCAG_MODS________________________          KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI
 #define     _UCCPR_L___________________________________ SC_UNDO, SC_CUT,  SC_COPY, SC_PAST, SC_REDO
 
-#define     _BASE_L4_________________                   MS_BTN1, NUM,     KC_LSFT
-#define     _BASE_R4________                            KC_SPC,  NAV
+#define     _BASE_L4_________________                   MS_BTN1, NUM,     KC_LSFT,KC_A
+#define     _BASE_R4________                            KC_SPC,  NAV,  KC_A,KC_A
 #define     _LYR_LTRANS______________                   ___x___, _______, ___x___
 #define     _LYR_RTRANS_____                            ___x___, _______
 
@@ -190,70 +190,70 @@ enum keycodes {
 
 #define LAYER_QWERTY                                                                                \
     KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,          KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    \
-    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,          KC_H,    KC_J,    KC_K,    KC_L,    KC_QUOT, \
-    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,          KC_N,    KC_M,    OR_COMM, OR_DOT,  AS_MINS, \
+KC_A,KC_A,    KC_S,    KC_D,    KC_F,    KC_G,          KC_H,    KC_J,    KC_K,    KC_L,    KC_QUOT, KC_A, \
+KC_A,KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,          KC_N,    KC_M,    OR_COMM, OR_DOT,  AS_MINS, KC_A,\
                       _BASE_L4_________________,      _BASE_R4________,                             \
                                         SCR_TOP,       KC_MUTE
 
 
 #define LAYER_COLEMAK_DH                                                                            \
     KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,          KC_J,    KC_L,    KC_U,    KC_Y,    AS_QUOT, \
-    KC_A,    KC_R,    KC_S,    KC_T,    KC_G,          KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    \
-    KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,          KC_K,    KC_H,    OR_COMM, OR_DOT,  AS_MINS, \
+KC_A,KC_A,    KC_R,    KC_S,    KC_T,    KC_G,          KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_A,\
+KC_A,KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,          KC_K,    KC_H,    OR_COMM, OR_DOT,  AS_MINS, KC_A,\
                       _BASE_L4_________________,      _BASE_R4________,                             \
                                         SCR_TOP,       KC_MUTE
 
 
 #define LAYER_GAME                                                                                  \
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,          KC_T,    KC_7,    KC_8,    KC_9,    KC_ESC,  \
-    KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,          KC_G,    KC_4,    KC_5,    KC_6,    KC_GRV,  \
-    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,          KC_LALT, KC_1,    KC_2,    KC_3,    TOG_CFG, \
-                      KC_ENT,  KC_SPC,  KC_LSFT,       _BASE_R4________,                            \
+KC_A,KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,          KC_G,    KC_4,    KC_5,    KC_6,    KC_GRV, KC_A,\
+KC_A,KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,          KC_LALT, KC_1,    KC_2,    KC_3,    TOG_CFG, KC_A,\
+                      _BASE_L4_________________,      _BASE_R4________,                             \
                                         SCR_TOP,       KC_MUTE
 
 
 #define LAYER_NAVIGATION                                                                            \
-    ___x___, KC_HOME, KC_UP,   KC_END,  KC_PGUP,       KC_INS,  KC_APP,  MS_BTN2, ___x___, ___x___, \
-    ___x___, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN,       KC_BSPC, _SCAG_MODS________________________, \
-    _NONE_5____________________________________,       KC_DEL,  MS_BTN1, KC_VOLD, KC_VOLU, KC_MUTE, \
-                      KC_TAB,  _______, KC_ENT,        _LYR_RTRANS_____,                            \
+KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,          KC_T,    KC_7,    KC_8,    KC_9,    KC_ESC,  \
+KC_A,KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,          KC_G,    KC_4,    KC_5,    KC_6,    KC_GRV, KC_A,\
+KC_A,KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,          KC_LALT, KC_1,    KC_2,    KC_3,    TOG_CFG, KC_A,\
+                      _BASE_L4_________________,      _BASE_R4________,                             \
                                         SCR_TOP,       ___x___
 
 
 #define LAYER_NUMBER                                                                                \
-    KC_ESC,  MS_BTN5, MS_BTN3, MS_BTN4, ___x___,       KC_COMM, KC_7,    KC_8,    KC_9,    KC_F5,   \
-    _GACS_MODS________________________, MS_BTN2,       KC_DOT,  KC_4,    KC_5,    KC_6,    KC_F2,   \
-    ___x___, ___x___, MS_PDPI, MS_SDPI, MS_SNIP,       KC_MINS, KC_1,    KC_2,    KC_3,    KC_F3,   \
-                      FUNC,    _______, ___x___,       KC_0,    _______,                            \
+    KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,          KC_T,    KC_7,    KC_8,    KC_9,    KC_ESC,  \
+KC_A,KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,          KC_G,    KC_4,    KC_5,    KC_6,    KC_GRV, KC_A,\
+KC_A,KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,          KC_LALT, KC_1,    KC_2,    KC_3,    TOG_CFG, KC_A,\
+                       _BASE_L4_________________,      _BASE_R4________,                             \
                                         ___x___,       ___x___
 
 
 #define LAYER_SYMBOL                                                                                \
-    KC_CIRC, KC_AMPR, KC_AT,   KC_DLR,  KC_GRV,        KC_TILD, KC_HASH, KC_ASTR, KC_PLUS, BK_DQUO, \
-    KC_PERC, BK_LCBR, KC_RCBR, DT_PIPE, KC_SCLN,       KC_COLN, KC_EQL,  BK_LBRC, KC_RBRC, BK_SQUO, \
-    ___x___, BK_LABK, KC_RABK, DT_BSLS, KC_EXLM,       KC_QUES, DT_SLSH, BK_LPRN, KC_RPRN, ___x___, \
-                      _LYR_LTRANS______________,       _LYR_RTRANS_____,                            \
+KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,          KC_T,    KC_7,    KC_8,    KC_9,    KC_ESC,  \
+KC_A,KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,          KC_G,    KC_4,    KC_5,    KC_6,    KC_GRV, KC_A,\
+KC_A,KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,          KC_LALT, KC_1,    KC_2,    KC_3,    TOG_CFG, KC_A,\
+                      _BASE_L4_________________,      _BASE_R4________,                             \
                                         ___x___,       ___x___
 
 
 #define LAYER_FUNCTION                                                                              \
-    QK_BOOT, GU_TOGG, CG_TOGG, KC_BRK,  KC_PSCR,       TOG_CFG, KC_F7,   KC_F8,   KC_F9,   KC_F10,  \
-    _GACS_MODS________________________, DM_PLY1,       FWD_CFG, KC_F4,   KC_F5,   KC_F6,   KC_F11,  \
-    ___x___, KC_NUM,  KC_CAPS, KC_SCRL, DM_REC1,       REV_CFG, KC_F1,   KC_F2,   KC_F3,   KC_F12,  \
-                      _______, ___x___, ___x___,       DM_PLY2, DM_REC2,                            \
+KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,          KC_T,    KC_7,    KC_8,    KC_9,    KC_ESC,  \
+KC_A,KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,          KC_G,    KC_4,    KC_5,    KC_6,    KC_GRV, KC_A,\
+KC_A,KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,          KC_LALT, KC_1,    KC_2,    KC_3,    TOG_CFG, KC_A,\
+                      _BASE_L4_________________,      _BASE_R4________,                             \
                                         TOG_CFG,       TOG_CFG
 
 
 #define HRM(k) HRM_LAYOUT(k)
-#define HRM_LAYOUT(                                                  \
-         k00, k01, k02, k03,  k04,    k05, k06, k07, k08, k09,       \
-         k10, k11, k12, k13,  k14,    k15, k16, k17, k18, k19,       \
-         k20, k21, k22, k23,  k24,    k25, k26, k27, k28, k29,       \
-                   k32, k33,  k34,    k35, k36,                      \
+#define HRM_LAYOUT(                                               \
+    k00, k01, k02, k03, k04,   k05, k06, k07, k08, k09,           \
+k10,k11, k12, k13, k14, k15,   k16, k17, k18, k19, k20, k21       \
+k22, k23, k24, k25, k26, k27,  k28, k29, k30, k31, k32, k33       \
+          k34, k35, k36,k37,   k38, k39,k40,k41                   \
                               e01,    e02                            \
 )                                                                    \
          k00, k01, k02, k03,  k04,    k05, k06, k07, k08, k09,       \
-    HRML(k10, k11, k12, k13), k14,    k15, HRMR(k16, k17, k18, k19), \
-         k20, k21, k22, k23,  k24,    k25, k26, k27, k28, k29,       \
-              k32, k33, k34,  k35,    k36,                           \
+k10,  HRML(k11, k12, k13), k14,k15, HRMR(k16, k17, k18, k19),k20, k21 \
+k22, k23, k24, k25, k26, k27,  k28, k29, k30, k31, k32, k33       \
+          k34, k35, k36,k37,   k38, k39,k40,k41                   \
                               e01,    e02
