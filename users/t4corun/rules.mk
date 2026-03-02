@@ -24,13 +24,14 @@ ENCODER_ENABLE         ?= no
 ENCODER_MAP_ENABLE     ?= no
 GRAVE_ESC_ENABLE       ?= no
 HAPTIC_ENABLE          ?= no
-MOUSEKEY_ENABLE        ?= no
+MOUSEKEY_ENABLE        = yes
 OLED_ENABLE            ?= no
 POINTING_DEVICE_ENABLE ?= no
 RGB_MATRIX_ENABLE      ?= no
 RGBLIGHT_ENABLE        ?= no
 SPACE_CADET_ENABLE     ?= no
 UNICODE_ENABLE         ?= no
+#COMBO_ENABLE = yes
 
 # custom definitions
 OLED_SIZE              ?= 128x32

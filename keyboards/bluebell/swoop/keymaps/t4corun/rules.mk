@@ -8,6 +8,6 @@ PLOOPYNANO_ENABLE = yes
 #   keyboards\bluebell\swoop\rules.mk
 ENCODER_ENABLE     = yes
 ENCODER_MAP_ENABLE = yes
-RGBLIGHT_ENABLE    = no
+RGBLIGHT_ENABLE    = yes
 RGB_MATRIX_DRIVER  = ws2812
 CONVERT_TO         = blok

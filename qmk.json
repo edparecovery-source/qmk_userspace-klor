@@ -2,5 +2,5 @@
     "userspace_version": "1.0",
     "build_targets": [
         ["non_tree/klor_saegewerk", "t4corun"]
-	]
+    ]
 }
