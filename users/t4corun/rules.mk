@@ -27,11 +27,13 @@ HAPTIC_ENABLE          ?= no
 MOUSEKEY_ENABLE        = yes
 OLED_ENABLE            ?= no
 POINTING_DEVICE_ENABLE ?= no
-RGB_MATRIX_ENABLE      ?= no
-RGBLIGHT_ENABLE        ?= no
+RGB_MATRIX_ENABLE      = no
+RGBLIGHT_ENABLE        = no
 SPACE_CADET_ENABLE     ?= no
 UNICODE_ENABLE         ?= no
-#COMBO_ENABLE = yes
+COMBO_ENABLE = yes
+TAP_DANCE_ENABLE = yes
+
 
 # custom definitions
 OLED_SIZE              ?= 128x32

@@ -1,5 +1,5 @@
 # override userspace defaults
-RGB_MATRIX_ENABLE = yes
+RGB_MATRIX_ENABLE = no
 OLED_ENABLE       = yes
 PLOOPYNANO_ENABLE = yes
 

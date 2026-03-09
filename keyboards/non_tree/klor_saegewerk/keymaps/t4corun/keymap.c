@@ -100,27 +100,27 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 // my RGB effects
 
-bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
-    if (host_keyboard_led_state().caps_lock) {
-        for (uint8_t i = led_min; i < led_max; i++) {
-            rgb_matrix_set_color(i, RGB_RED);
-        }
-    } else {
-        for (uint8_t i = led_min; i < led_max; i++) {
-            switch(get_highest_layer(layer_state|default_layer_state)) {
-                case 4:
-                rgb_matrix_set_color(i, RGB_PURPLE);
-                break;
-                case 5:
-                    rgb_matrix_set_color(i, RGB_CYAN);
-                    break;
-                case 6:
-                    rgb_matrix_set_color(i, RGB_GREEN);
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
-    return false;
-}
+// bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+//     if (host_keyboard_led_state().caps_lock) {
+//         for (uint8_t i = led_min; i < led_max; i++) {
+//             rgb_matrix_set_color(i, RGB_RED);
+//         }
+//     } else {
+//         for (uint8_t i = led_min; i < led_max; i++) {
+//             switch(get_highest_layer(layer_state|default_layer_state)) {
+//                 case 4:
+//                 rgb_matrix_set_color(i, RGB_PURPLE);
+//                 break;
+//                 case 5:
+//                     rgb_matrix_set_color(i, RGB_CYAN);
+//                     break;
+//                 case 6:
+//                     rgb_matrix_set_color(i, RGB_GREEN);
+//                     break;
+//                 default:
+//                     break;
+//             }
+//         }
+//     }
+//     return false;
+// }
